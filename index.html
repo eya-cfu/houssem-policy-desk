@@ -1,41 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Houssem's Policy Desk</title>
-  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+    .gradient-text { background: linear-gradient(90deg, #3b82f6, #10b981); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .post-card:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04); }
+  </style>
 </head>
-<body>
-  <div class="container">
-    <aside class="sidebar">
-      <h1>Houssem's Policy Desk</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="posts/post1.html">Post 1</a></li>
-          <li><a href="posts/post2.html">Post 2</a></li>
-        </ul>
-      </nav>
-      <footer>
-        <p>&copy; 2025 Houssem</p>
-      </footer>
-    </aside>
+<body class="min-h-screen">
+  <nav class="bg-white shadow-sm sticky top-0 z-10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16 items-center">
+        <a href="index.html" class="text-xl font-bold text-gray-900">
+          <span class="gradient-text">Houssem Policy Desk</span>
+        </a>
+        <div class="flex space-x-8">
+          <a href="index.html" class="text-gray-900 font-medium text-sm hover:text-blue-600">Blog</a>
+          <a href="about.html" class="text-gray-500 font-medium text-sm hover:text-blue-600">About</a>
+        </div>
+      </div>
+    </div>
+  </nav>
 
-    <main class="content">
-      <section>
-        <h2>Recent Posts</h2>
-        <article>
-          <h3><a href="posts/post1.html">🔎 Rethinking Carbon Pricing in Resource-Constrained Economies</a></h3>
-          <p>An exploration of fiscal tools and carbon pricing in emerging economies, with a focus on balancing development and sustainability.</p>
-        </article>
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="text-center mb-12">
+      <h1 class="text-4xl font-bold text-gray-900 mb-4">Energy Transition Policy Analysis</h1>
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto">Exploring the intersection of policy, technology, and economics in the global shift to sustainable energy systems.</p>
+    </div>
 
-        <article>
-          <h3><a href="posts/post2.html">💧 Water, Energy, and Scarcity: A Policy Nexus</a></h3>
-          <p>This post dives into the complex relationship between water scarcity and energy transition policy, drawing from case studies in North Africa.</p>
-        </article>
-      </section>
-    </main>
-  </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <a href="posts/solar-revolution.html" class="post-card bg-white rounded-lg overflow-hidden shadow-md transition-transform duration-300">
+        <img src="https://images.unsplash.com/photo-1508514177221-188e1e464088?auto=format&fit=crop&w=1470&q=80" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <div class="text-sm text-gray-500 mb-2">June 15, 2023 • 8 min read</div>
+          <h3 class="text-xl font-bold text-gray-900 mb-2">The Solar Revolution: Policy Frameworks Driving Adoption</h3>
+          <p class="text-gray-600 mb-4">How innovative policy mechanisms are accelerating solar energy worldwide — and what emerging markets can learn.</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs font-medium rounded-full">Renewables</span>
+            <span class="px-3 py-1 bg-green-50 text-green-600 text-xs font-medium rounded-full">Policy</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="posts/offshore-wind.html" class="post-card bg-white rounded-lg overflow-hidden shadow-md transition-transform duration-300">
+        <img src="https://images.unsplash.com/photo-1624397640148-949b1732bb0a?auto=format&fit=crop&w=1470&q=80" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <div class="text-sm text-gray-500 mb-2">May 28, 2023 • 12 min read</div>
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Offshore Wind: Navigating the Regulatory Seas</h3>
+          <p class="text-gray-600 mb-4">A comparative look at offshore wind policies across continents and what regulators can learn from each other.</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-purple-50 text-purple-600 text-xs font-medium rounded-full">Wind Energy</span>
+            <span class="px-3 py-1 bg-green-50 text-green-600 text-xs font-medium rounded-full">Policy</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </main>
 </body>
 </html>
