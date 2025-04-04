@@ -4,12 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About | Houssem Policy Desk</title>
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/3/3a/Wind_turbine_icon.svg" type="image/svg+xml">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
     body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
     .gradient-text { background: linear-gradient(90deg, #3b82f6, #10b981); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .timeline-item:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      left: 7px;
+      top: 24px;
+      height: calc(100% - 24px);
+      width: 2px;
+      background-color: #e5e7eb;
+    }
   </style>
 </head>
 <body>
@@ -46,8 +56,12 @@
               <a href="mailto:houssem@policydesk.com" class="text-gray-700 hover:text-blue-600">houssem@policydesk.com</a>
             </div>
             <div class="flex items-center">
+              <i class="fas fa-phone text-gray-500 mr-3"></i>
+              <span class="text-gray-700">+1 (555) 123-4567</span>
+            </div>
+            <div class="flex items-center">
               <i class="fas fa-map-marker-alt text-gray-500 mr-3"></i>
-              <span class="text-gray-700">Washington, D.C.</span>
+              <span class="text-gray-700">Berlin / Tunis</span>
             </div>
           </div>
 
@@ -66,28 +80,60 @@
       <!-- Right: About Content -->
       <div class="md:w-2/3 space-y-12">
         <section class="bg-white p-6 rounded-lg shadow-md">
-          <h2 class="text-2xl font-bold text-gray-900 mb-4">Professional Profile</h2>
-          <p class="text-gray-700 mb-4">With over 8 years of experience in energy policy analysis, I specialize in evaluating regulatory frameworks and market mechanisms that accelerate the transition to sustainable energy systems.</p>
-          <p class="text-gray-700">My work focuses on bridging the gap between technical feasibility and policy implementation, with expertise in renewable energy integration, grid modernization, and equitable transition strategies.</p>
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">About Me</h2>
+          <p class="text-gray-700 mb-4">
+            I'm a public policy analyst specializing in the energy transition, fiscal reform, and sustainable finance. I bring together practical experience and interdisciplinary thinking to address development challenges in resource-constrained economies.
+          </p>
+          <p class="text-gray-700">
+            My work spans IMF negotiations, renewable energy strategy, budget transparency, and civic tech. I collaborate with civil society, ministries, and multilateral institutions to design just and climate-resilient policy solutions.
+          </p>
         </section>
 
         <section class="bg-white p-6 rounded-lg shadow-md">
-          <h2 class="text-2xl font-bold text-gray-900 mb-6">Get In Touch</h2>
-          <form class="space-y-4">
-            <div>
-              <label for="name" class="block text-gray-700 font-medium mb-1">Name</label>
-              <input id="name" type="text" class="w-full border border-gray-300 px-4 py-2 rounded-md focus:ring-2 focus:ring-blue-500">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">Experience</h2>
+          <div class="space-y-8 relative">
+            <div class="timeline-item relative pl-8">
+              <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-blue-500"></div>
+              <h3 class="text-xl font-bold text-gray-900">Public Finance Lead</h3>
+              <p class="text-gray-600 mb-1">Al Bawsala • 2022 – 2023</p>
+              <p class="text-gray-700">Led the organization’s fiscal policy and debt transparency work. Represented Tunisian civil society in IMF negotiations and produced national budget guides for the public.</p>
             </div>
-            <div>
-              <label for="email" class="block text-gray-700 font-medium mb-1">Email</label>
-              <input id="email" type="email" class="w-full border border-gray-300 px-4 py-2 rounded-md focus:ring-2 focus:ring-blue-500">
+
+            <div class="timeline-item relative pl-8">
+              <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-green-500"></div>
+              <h3 class="text-xl font-bold text-gray-900">Graduate Consultant</h3>
+              <p class="text-gray-600 mb-1">IMF, Tunisia Ministry of Finance • 2023</p>
+              <p class="text-gray-700">Designed debt sustainability indicators and communication tools to assess fiscal space for green spending in Tunisia and other emerging economies.</p>
             </div>
-            <div>
-              <label for="message" class="block text-gray-700 font-medium mb-1">Message</label>
-              <textarea id="message" rows="4" class="w-full border border-gray-300 px-4 py-2 rounded-md focus:ring-2 focus:ring-blue-500"></textarea>
+
+            <div class="timeline-item relative pl-8">
+              <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-purple-500"></div>
+              <h3 class="text-xl font-bold text-gray-900">Co-founder</h3>
+              <p class="text-gray-600 mb-1">Diaspora Civic Network • 2024 – Present</p>
+              <p class="text-gray-700">Launched a platform for Tunisian youth in Europe to collaborate on research, organizing, and digital tools focused on democratic transformation and climate justice.</p>
             </div>
-            <button type="submit" class="w-full bg-gradient-to-r from-blue-500 to-green-500 text-white py-2 px-4 rounded-md font-medium hover:opacity-90">Send Message</button>
-          </form>
+          </div>
+        </section>
+
+        <section class="bg-white p-6 rounded-lg shadow-md">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">Education</h2>
+          <div class="space-y-6">
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-900">Master of Public Policy</h3>
+                                    <p class="text-gray-600">Harvard Kennedy School • 2013 - 2015</p>
+                                    <p class="text-gray-700 mt-1">
+                                        Concentration in Energy and Environmental Policy. Thesis on "Policy Instruments for Scaling Renewable Energy in Emerging Economies."
+                                    </p>
+                                </div>
+                                
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-900">B.S. in Environmental Economics</h3>
+                                    <p class="text-gray-600">University of California, Berkeley • 2009 - 2013</p>
+                                    <p class="text-gray-700 mt-1">
+                                        Minor in Energy Engineering. Senior project on "Economic Analysis of Feed-in Tariff Programs."
+                                    </p>
+                                </div>
+          </div>
         </section>
       </div>
     </div>
