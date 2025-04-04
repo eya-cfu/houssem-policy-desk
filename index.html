@@ -3,21 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Houssem's Policy Desk</title>
+  <title>Houssem Policy Desk | Energy Transition Analysis</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/3/3a/Wind_turbine_icon.svg" type="image/svg+xml">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-    body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
-    .gradient-text { background: linear-gradient(90deg, #3b82f6, #10b981); -webkit-background-clip: text; background-clip: text; color: transparent; }
-    .post-card:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04); }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f8fafc;
+    }
+
+    .gradient-text {
+      background: linear-gradient(90deg, #3b82f6, #10b981);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .post-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
   </style>
 </head>
 <body class="min-h-screen">
+  <!-- Navigation -->
   <nav class="bg-white shadow-sm sticky top-0 z-10">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between h-16 items-center">
-        <a href="index.html" class="text-xl font-bold text-gray-900">
+        <a href="#" class="text-xl font-bold text-gray-900">
           <span class="gradient-text">Houssem Policy Desk</span>
         </a>
         <div class="flex space-x-8">
@@ -28,62 +44,98 @@
     </div>
   </nav>
 
+  <!-- Main Content -->
   <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-    <div class="text-center mb-12">
+    <div class="mb-12 text-center">
       <h1 class="text-4xl font-bold text-gray-900 mb-4">Energy Transition Policy Analysis</h1>
       <p class="text-lg text-gray-600 max-w-3xl mx-auto">Exploring the intersection of policy, technology, and economics in the global shift to sustainable energy systems.</p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <a href="posts/solar-revolution.html" class="post-card bg-white rounded-lg overflow-hidden shadow-md transition-transform duration-300">
-        <img src="https://images.unsplash.com/photo-1508514177221-188e1e464088?auto=format&fit=crop&w=1470&q=80" class="w-full h-48 object-cover">
+      <!-- Blog Post: Debt and the Energy Transition -->
+      <div class="post-card bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300 hover:cursor-pointer">
+        <img src="https://images.unsplash.com/photo-1565373674559-2b78c8c418f4?auto=format&fit=crop&w=1470&q=80" alt="Debt and energy" class="w-full h-48 object-cover">
         <div class="p-6">
-          <div class="text-sm text-gray-500 mb-2">June 15, 2023 • 8 min read</div>
-          <h3 class="text-xl font-bold text-gray-900 mb-2">The Solar Revolution: Policy Frameworks Driving Adoption</h3>
-          <p class="text-gray-600 mb-4">How innovative policy mechanisms are accelerating solar energy worldwide — and what emerging markets can learn.</p>
-          <div class="flex flex-wrap gap-2">
-            <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs font-medium rounded-full">Renewables</span>
-            <span class="px-3 py-1 bg-green-50 text-green-600 text-xs font-medium rounded-full">Policy</span>
+          <div class="flex items-center text-sm text-gray-500 mb-2">
+            <span>April 4, 2025</span>
+            <span class="mx-2">•</span>
+            <span>9 min read</span>
           </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Debt and the Energy Transition</h3>
+          <p class="text-gray-600 mb-4">How debt burdens shape the future of climate investment in emerging economies like Tunisia.</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-red-50 text-red-600 text-xs font-medium rounded-full">Public Finance</span>
+            <span class="px-3 py-1 bg-green-50 text-green-600 text-xs font-medium rounded-full">Energy Transition</span>
+            <span class="px-3 py-1 bg-yellow-50 text-yellow-600 text-xs font-medium rounded-full">Global South</span>
+          </div>
+          <a href="posts/debt-energy-transition.html" class="text-blue-600 font-medium hover:text-blue-800 transition-colors">Read more →</a>
         </div>
-      </a>
+      </div>
 
-      <a href="posts/offshore-wind.html" class="post-card bg-white rounded-lg overflow-hidden shadow-md transition-transform duration-300">
-        <img src="https://images.unsplash.com/photo-1624397640148-949b1732bb0a?auto=format&fit=crop&w=1470&q=80" class="w-full h-48 object-cover">
+      <!-- Blog Post: Water Scarcity and Decarbonization -->
+      <div class="post-card bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300 hover:cursor-pointer">
+        <img src="https://images.unsplash.com/photo-1603052875149-60b6967f9298?auto=format&fit=crop&w=1470&q=80" alt="Dry landscape and solar" class="w-full h-48 object-cover">
         <div class="p-6">
-          <div class="text-sm text-gray-500 mb-2">May 28, 2023 • 12 min read</div>
-          <h3 class="text-xl font-bold text-gray-900 mb-2">Offshore Wind: Navigating the Regulatory Seas</h3>
-          <p class="text-gray-600 mb-4">A comparative look at offshore wind policies across continents and what regulators can learn from each other.</p>
-          <div class="flex flex-wrap gap-2">
-            <span class="px-3 py-1 bg-purple-50 text-purple-600 text-xs font-medium rounded-full">Wind Energy</span>
-            <span class="px-3 py-1 bg-green-50 text-green-600 text-xs font-medium rounded-full">Policy</span>
+          <div class="flex items-center text-sm text-gray-500 mb-2">
+            <span>April 4, 2025</span>
+            <span class="mx-2">•</span>
+            <span>7 min read</span>
           </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Water Scarcity and Decarbonization</h3>
+          <p class="text-gray-600 mb-4">Decarbonization efforts must integrate water resilience. Here's why the Global South can’t afford to separate the two.</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs font-medium rounded-full">Water</span>
+            <span class="px-3 py-1 bg-green-50 text-green-600 text-xs font-medium rounded-full">Decarbonization</span>
+            <span class="px-3 py-1 bg-gray-50 text-gray-600 text-xs font-medium rounded-full">Mediterranean</span>
+          </div>
+          <a href="posts/water-scarcity-decarbonization.html" class="text-blue-600 font-medium hover:text-blue-800 transition-colors">Read more →</a>
         </div>
-      </a>
+      </div>
+
+      <!-- Blog Post: Tunisia in the Hydrogen Race -->
+      <div class="post-card bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300 hover:cursor-pointer">
+        <img src="https://images.unsplash.com/photo-1682687982141-394d4c2a1833?auto=format&fit=crop&w=1470&q=80" alt="Hydrogen plant in desert" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <div class="flex items-center text-sm text-gray-500 mb-2">
+            <span>April 4, 2025</span>
+            <span class="mx-2">•</span>
+            <span>8 min read</span>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Tunisia in the Mediterranean Green Hydrogen Race</h3>
+          <p class="text-gray-600 mb-4">Can Tunisia avoid extractivism and shape green hydrogen to serve its own development?</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-green-50 text-green-600 text-xs font-medium rounded-full">Hydrogen</span>
+            <span class="px-3 py-1 bg-red-50 text-red-600 text-xs font-medium rounded-full">Tunisia</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs font-medium rounded-full">Mediterranean</span>
+          </div>
+          <a href="posts/green-hydrogen-tunisia.html" class="text-blue-600 font-medium hover:text-blue-800 transition-colors">Read more →</a>
+        </div>
+      </div>
     </div>
   </main>
-<!-- Footer -->
-    <footer class="bg-white border-t border-gray-200 mt-12">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-            <div class="md:flex md:items-center md:justify-between">
-                <div class="flex justify-center md:order-2 space-x-6">
-                    <a href="#" class="text-gray-400 hover:text-gray-500">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-gray-500">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-gray-500">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-                <div class="mt-8 md:mt-0 md:order-1">
-                    <p class="text-center text-gray-500 text-sm">
-                        &copy; 2023 Houssem Policy Desk. All rights reserved.
-                    </p>
-                </div>
-            </div>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-gray-200 mt-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div class="md:flex md:items-center md:justify-between">
+        <div class="flex justify-center md:order-2 space-x-6">
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <i class="fab fa-github"></i>
+          </a>
         </div>
-    </footer>
+        <div class="mt-8 md:mt-0 md:order-1">
+          <p class="text-center text-gray-500 text-sm">
+            &copy; 2023 Houssem Policy Desk. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
