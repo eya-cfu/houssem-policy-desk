@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Houssem Policy Desk</title>
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/3/3a/Wind_turbine_icon.svg" type="image/svg+xml">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+    .gradient-text { background: linear-gradient(90deg, #3b82f6, #10b981); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .timeline-item:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      left: 7px;
+      top: 24px;
+      height: calc(100% - 24px);
+      width: 2px;
+      background-color: #e5e7eb;
+    }
+  </style>
+</head>
+<body>
+  <nav class="bg-white shadow-sm sticky top-0 z-10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16 items-center">
+        <a href="index.html" class="text-xl font-bold text-gray-900">
+          <span class="gradient-text">Houssem Policy Desk</span>
+        </a>
+        <div class="flex space-x-8">
+          <a href="index.html" class="text-gray-500 font-medium text-sm hover:text-blue-600">Blog</a>
+          <a href="about.html" class="text-gray-900 font-medium text-sm hover:text-blue-600">About</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+  <!-- Header -->
+  <div class="mb-12 flex flex-col md:flex-row md:items-start gap-8">
+    <!-- Left: Profile Card -->
+    <aside class="bg-white p-6 rounded-lg shadow-md w-full md:w-1/3 flex flex-col items-center">
+      <div class="w-36 h-36 rounded-full overflow-hidden border-4 border-blue-100 shadow mb-4">
+        <img src="images/Headshot2.PNG" alt="Houssem" class="w-full h-full object-cover">
+      </div>
+      <h2 class="text-2xl font-bold text-gray-900 mb-1">Houssem Chammam</h2>
+      <p class="text-gray-600 mb-4 text-center">Public Policy Analyst<br><span class="text-xs text-gray-400">Berlin & Tunis</span></p>
+      <a href="mailto:chammam.houssem@gmail.com" class="text-blue-600 mb-2 text-sm hover:underline"><i class="fas fa-envelope mr-1"></i>chammam.houssem@gmail.com</a>
+      <a href="https://www.linkedin.com/in/houssem-chammam/" target="_blank" class="text-gray-500 hover:text-blue-700 text-xl mb-2"><i class="fab fa-linkedin"></i></a>
+      <a href="Houssem-Chammam-CV.pdf" class="mt-3 px-4 py-2 bg-gradient-to-r from-blue-500 to-green-500 text-white rounded-md shadow hover:opacity-90 text-sm font-medium text-center">Download CV</a>
+    </aside>
+
+    <!-- Right: About & Experience -->
+    <section class="flex-1 space-y-8">
+      <!-- Name, Title & Blurb -->
+      <div class="mb-2">
+        <h1 class="text-4xl font-bold text-gray-900 mb-2">About Me</h1>
+        <div id="profile-preview" class="text-gray-700">
+          <p class="mb-2">
+            I’m a public policy analyst specializing in public finance, energy, and sustainable development. I’ve led research and advocacy projects in Tunisia, the US, and across the Mediterranean, working to advance the energy transition in complex, resource-constrained settings.
+          </p>
+          <button onclick="toggleProfile()" class="inline-flex items-center px-3 py-1.5 border border-gray-300 text-sm text-gray-700 rounded-md hover:bg-gray-100 transition">
+            <span>Read more</span>
+            <svg class="ml-2 w-4 h-4 text-gray-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
+          </button>
+        </div>
+        <div id="profile-full" class="hidden text-gray-700">
+          <p class="mb-2">
+            I’m a public policy analyst specializing in public finance, energy, and sustainable development. I’ve led research and advocacy projects in Tunisia, the US, and across the Mediterranean, working to advance the energy transition in complex, resource-constrained settings.
+          </p>
+          <p class="mb-2">
+            My expertise spans cross-sectoral policy, stakeholder engagement, data analysis, and communicating policy to diverse audiences. I am passionate about building practical solutions for countries facing water scarcity, debt, and political fragmentation. Currently, my work focuses on the intersection of water and energy policy in North Africa and the Mediterranean.
+          </p>
+          <p class="mb-2">
+            This site brings together my ongoing work, learning, and public interest projects.
+          </p>
+          <button onclick="toggleProfile()" class="inline-flex items-center px-3 py-1.5 border border-gray-300 text-sm text-gray-700 rounded-md hover:bg-gray-100 transition">
+            <span>Show less</span>
+            <svg class="ml-2 w-4 h-4 text-gray-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" /></svg>
+          </button>
+        </div>
+        <script>
+          function toggleProfile() {
+            const preview = document.getElementById('profile-preview');
+            const full = document.getElementById('profile-full');
+            preview.classList.toggle('hidden');
+            full.classList.toggle('hidden');
+          }
+        </script>
+      </div>
+
+      <!-- Skills/How I Work Section -->
+      <div class="bg-gradient-to-r from-blue-50 to-green-50 rounded-lg shadow p-4 grid grid-cols-1 md:grid-cols-3 gap-4 mb-2">
+        <div class="flex flex-col items-center text-center">
+          <div class="text-blue-500 mb-1"><i class="fas fa-layer-group fa-lg"></i></div>
+          <span class="font-semibold text-gray-700">Mixed Methods</span>
+          <span class="text-xs text-gray-500">Blending quantitative & qualitative research for practical policy solutions.</span>
+        </div>
+        <div class="flex flex-col items-center text-center">
+          <div class="text-green-500 mb-1"><i class="fas fa-chart-line fa-lg"></i></div>
+          <span class="font-semibold text-gray-700">Data-Driven Analysis</span>
+          <span class="text-xs text-gray-500">Transforming data and evidence into actionable policy advice.</span>
+        </div>
+        <div class="flex flex-col items-center text-center">
+          <div class="text-yellow-500 mb-1"><i class="fas fa-bullhorn fa-lg"></i></div>
+          <span class="font-semibold text-gray-700">Advocacy for Impact</span>
+          <span class="text-xs text-gray-500">Strategic engagement to drive sustainable policy change.</span>
+        </div>
+      </div>
+
+      <!-- Timeline Experience -->
+      <section class="bg-white rounded-lg shadow-md p-6">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Experience</h2>
+        <div class="space-y-8 relative">
+          <div class="timeline-item relative pl-8">
+            <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-blue-500"></div>
+            <h3 class="text-xl font-bold text-gray-900">Public Policy & Finance Lead</h3>
+            <p class="text-gray-600 mb-1">Al Bawsala • 2021 – 2023</p>
+            <p class="text-gray-700">Led research, coalition strategy, and advocacy during IMF negotiations. Designed interactive fiscal tools and co-authored key publications on debt, subsidy reform, and austerity.</p>
+          </div>
+          <div class="timeline-item relative pl-8">
+            <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-green-500"></div>
+            <h3 class="text-xl font-bold text-gray-900">Program Officer (Trainee)</h3>
+            <p class="text-gray-600 mb-1">North African Policy Initiative • 2025</p>
+            <p class="text-gray-700">Co-designed a youth-led Mediterranean policy platform and led training modules on policy research and stakeholder engagement.</p>
+          </div>
+          <div class="timeline-item relative pl-8">
+            <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-purple-500"></div>
+            <h3 class="text-xl font-bold text-gray-900">Student Assistant</h3>
+            <p class="text-gray-600 mb-1">GIGA • 2024</p>
+            <p class="text-gray-700">Supported research on authoritarianism and political communication. Managed academic events and built a research database for project teams.</p>
+          </div>
+          <div class="timeline-item relative pl-8">
+            <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-yellow-500"></div>
+            <h3 class="text-xl font-bold text-gray-900">Regional Campaign Co-Manager</h3>
+            <p class="text-gray-600 mb-1">Bernie Sanders 2020 • Minnesota, USA</p>
+            <p class="text-gray-700">Led local campaign operations, policy messaging, and volunteer coordination. Contributed to a winning strategy grounded in the Green New Deal and social justice themes.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section class="bg-white rounded-lg shadow-md p-6">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Education</h2>
+        <div class="space-y-6">
+          <div>
+            <h3 class="text-xl font-bold text-gray-900">Master of Public Policy</h3>
+            <p class="text-gray-600">Willy Brandt School, Germany – DAAD Scholar • 2023 - 2025</p>
+            <p class="text-gray-700 mt-1">Thesis on fiscal sustainability and climate finance in water-scarce, resource-constrained settings.</p>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-gray-900">Bachelor's in Political Science</h3>
+            <p class="text-gray-600">Carleton College, USA • 2017 - 2021</p>
+            <p class="text-gray-700 mt-1">Focused on budget law, macroeconomics, and applied fiscal management.</p>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+</main>
+
+<!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 mt-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="md:flex md:items-center md:justify-between">
+                <div class="flex justify-center md:order-2 space-x-6">
+                    <a href="https://www.linkedin.com/in/houssem-chammam/" class="text-gray-400 hover:text-gray-500">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+                <div class="mt-8 md:mt-0 md:order-1">
+                    <p class="text-center text-gray-500 text-sm">
+                        &copy; 2023 Houssem Policy Desk. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
